@@ -36,8 +36,9 @@ public:
 
         if (p == 1) { t.kategori = "Regular"; t.harga = 250000; }
         else if (p == 2) { t.kategori = "VIP"; t.harga = 500000; }
-        else { t.kategori = "VVIP"; t.harga = 750000; }
-
+        else if (p == 3) { t.kategori = "VVIP"; t.harga = 750000; }
+             else { cout << "Pilihan Tidak Valid\n"; return;}
+            
         data[jumlah++] = t;
         cout << "Berhasil tambah tiket.\n";
     }
@@ -95,7 +96,7 @@ public:
                 if (p == 1) { data[i].kategori = "Regular"; data[i].harga = 250000; }
                 else if (p == 2) { data[i].kategori = "VIP"; data[i].harga = 500000; }
                 else if (p == 3) { data[i].kategori = "VVIP"; data[i].harga = 750000; }
-                     else { cout << "Pemilihan Kategori tidak Valid\n";}
+                     else { cout << "Pemilihan Kategori tidak Valid\n"; return;}
                 
                 cout << "Status (Aktif/Dibatalkan): ";
                 cin.ignore();
