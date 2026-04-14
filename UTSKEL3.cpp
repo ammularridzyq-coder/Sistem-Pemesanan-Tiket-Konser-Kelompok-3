@@ -117,7 +117,7 @@ public:
 
             switch(pilih) {
                 case 1:
-                    if (data[j].harga > data[j+1].harga)
+                    if (data[j].harga < data[j+1].harga)
                         swap(data[j], data[j+1]);
                     break;
 
