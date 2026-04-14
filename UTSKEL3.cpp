@@ -94,8 +94,9 @@ public:
 
                 if (p == 1) { data[i].kategori = "Regular"; data[i].harga = 250000; }
                 else if (p == 2) { data[i].kategori = "VIP"; data[i].harga = 500000; }
-                else { data[i].kategori = "VVIP"; data[i].harga = 750000; }
-
+                else if (p == 3) { data[i].kategori = "VVIP"; data[i].harga = 750000; }
+                     else { cout << "Pemilihan Kategori tidak Valid\n";}
+                
                 cout << "Status (Aktif/Dibatalkan): ";
                 cin.ignore();
                 getline(cin, data[i].status);
